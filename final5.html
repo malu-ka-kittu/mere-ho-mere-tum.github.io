@@ -10,11 +10,15 @@
   <body>
     <div class="container">
       
-      <img src="us.jpeg" alt="Love you">
+      <img src="us.jpeg" alt="Love you" width="100" height="100">
 
-      <audio controls autoplay>
-        <source src="sang-rahiyo.mp3" type="audio/mpeg" width="100" height="100">
+      <audio controls autoplay id="myaudio">
+        <source src="sang-rahiyo.mp3" type="audio/mpeg" >
       </audio>
+      <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.2;
+      </script>
       
     </div>
   </body>
